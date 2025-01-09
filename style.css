@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  gap: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 0 16px;
+  background: #efefef;
+  border: 1px solid #000000;
+}
+
+/* div */
+.block {
+  margin: 16px;
+  height: 64px;
+  background: #cccccc;
+  border: 1px solid #000000;
+}
+
+.block:not(.block-group > .block) {
+  width: 16.66%;
+}
+
+.block-group {
+  width: calc(16.66% + 32px);
+}
