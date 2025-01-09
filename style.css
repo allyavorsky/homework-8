@@ -3,16 +3,23 @@
 }
 
 body {
-  gap: 16px;
   padding: 32px;
-  display: flex;
-  flex-direction: column;
 }
 
 section {
   padding: 0 16px;
   background: #efefef;
   border: 1px solid #000000;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /* div */
